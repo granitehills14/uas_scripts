@@ -15,7 +15,7 @@ shifty.py - shifts radar transect waypoints missions. 1) No vertical offset, alo
 radarSwathGenerator.py - ingests radar flight planning information (AGL, look angle, kml or waypoints file) and generates a kml of the expected radar swath on the ground. Run without a DEM for the 2D "idealized" mode, run with a DEM for a 3D, raytraced version that is terrain aware. If used with a DSM, other obstructions can be considered as well.
   - Version: 1.0
   - Dependencies:
-      - argpase
+      - argparse
       - math
       - os
       - xml.etree.ElementTree
