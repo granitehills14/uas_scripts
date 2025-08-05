@@ -31,17 +31,21 @@ radarSwathGenerator.py - ingests radar flight planning information (AGL, look an
       - Linux: https://f005.backblazeb2.com/file/radarSwathGenerator-package-downloads/linux/radarSwathGenerator
       - Windows: https://f005.backblazeb2.com/file/radarSwathGenerator-package-downloads/windows/radarSwathGenerator.exe
   - Running the Executables:
-      - Linux Command Line
-           radarSwathGenerator /path/to/input/file \
-           --height [typically a number between 0 and 120 meters] \
-           --look-angle [typically a number between 0 and 90 degrees] \
-           --side [right or left] \
-           [--dem /path/to/dem.tif] \
-           --output /path/to/output.kml
-      - Windows Command Line
-           radarSwathGenerator.exe \path\to\input\file ^
-           --height [typically a number between 0 and 120 meters] ^
-           --look-angle [typically a number between 0 and 90 degrees] ^
-           --side [right or left] ^
-           [--dem /path/to/dem.tif] ^
-           --output \path\to\output.kml
+      - Linux Command Line:
+        ```bash
+        radarSwathGenerator /path/to/input/file \
+          --height [0–120 m] \
+          --look-angle [0–90°] \
+          --side [right|left] \
+          [--dem /path/to/dem.tif] \
+          --output /path/to/output.kml
+        ```
+      - Windows Command Line:
+        ```bat
+        radarSwathGenerator.exe \path\to\input\file ^
+          --height [0–120 m] ^
+          --look-angle [0–90°] ^
+          --side [right|left] ^
+          [--dem /path/to/dem.tif] ^
+          --output \path\to\output.kml
+        ```
